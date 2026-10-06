@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng nhập - Smart IoT</title>
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main class="login-page">
+        <section class="login-card">
+            <div class="login-brand">
+                <div class="brand-mark">⌁</div>
+                <div>
+                    <strong>Smart IoT</strong>
+                    <div class="muted">Hệ thống giám sát môi trường</div>
+                </div>
+            </div>
+
+            <h1>Đăng nhập</h1>
+            <p class="subtitle">Đăng nhập để giám sát cảm biến và điều khiển thiết bị.</p>
+
+            <form id="login-form" class="login-form">
+                <div class="form-field">
+                    <label for="username">Tên đăng nhập</label>
+                    <input class="input" id="username" name="username" autocomplete="username" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="password">Mật khẩu</label>
+                    <input class="input" id="password" name="password" type="password" autocomplete="current-password" required>
+                </div>
+
+                <div id="login-error" class="login-error"></div>
+                <button class="button primary" type="submit">Đăng nhập</button>
+            </form>
+
+            <!-- <p class="helper-text">Tài khoản ban đầu được tạo bằng lệnh <code>npm run seed</code>.</p> -->
+        </section>
+    </main>
+
+    <script src="/js/core/api.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart IoT System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-mark">⌁</div>
+                <span>Smart IoT</span>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item active" data-view="dashboard">
+                    <button class="nav-button" type="button">
+                        <span class="nav-icon"><i class="fa-regular fa-house"></i></span>
+                        <span class="nav-label">Dashboard</span>
+                    </button>
+                </li>
+                <li class="nav-item" data-view="dataSensor">
+                    <button class="nav-button" type="button">
+                        <span class="nav-icon"><i class="fa-solid fa-temperature-half"></i></span>
+                        <span class="nav-label">Data Sensor</span>
+                    </button>
+                </li>
+                <li class="nav-item" data-view="actionHistory">
+                    <button class="nav-button" type="button">
+                        <span class="nav-icon"><i class="fa-solid fa-arrow-rotate-left"></i></span>
+                        <span class="nav-label">Action History</span>
+                    </button>
+                </li>
+                <li class="nav-item" data-view="profile">
+                    <button class="nav-button" type="button">
+                        <span class="nav-icon"><i class="fa-solid fa-user"></i></span>
+                        <span class="nav-label">Profile</span>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <button id="logout-button" class="logout-button" type="button">
+                    <span>⇥</span>
+                    <span class="logout-label">Đăng xuất</span>
+                </button>
+            </div>
+        </aside>
+
+        <div class="main-area">
+            <header class="topbar">
+                <h1 id="topbar-title" class="page-title">Dashboard</h1>
+                <div class="user-summary">
+                    <span class="user-name" id="topbar-user-name">Người dùng</span>
+                    <span class="user-avatar-small" id="topbar-avatar">U</span>
+                </div>
+            </header>
+
+            <main id="app-content" class="content"></main>
+        </div>
+    </div>
+
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/core/api.js"></script>
+    <script src="/js/core/utils.js"></script>
+    <script src="/js/core/simpleChart.js"></script>
+    <script src="/js/components.js"></script>
+    <script src="/js/views/dashboard.js"></script>
+    <script src="/js/views/dataSensor.js"></script>
+    <script src="/js/views/actionHistory.js"></script>
+    <script src="/js/views/profile.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

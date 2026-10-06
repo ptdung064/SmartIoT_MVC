@@ -1,0 +1,24 @@
+SMART IOT MVC - CHẠY NHANH TRÊN WINDOWS
+
+1) Mở terminal trong thư mục backend
+2) npm install
+3) npm run seed
+4) npm start
+5) Mở http://localhost:3000/login.html
+
+Mặc định:
+- username: admin
+- password: admin123
+
+MongoDB local mặc định:
+mongodb://127.0.0.1:27017/iot_db
+
+Nếu bạn dùng MongoDB Atlas:
+- mở backend/.env
+- thay MONGO_URI bằng URI của bạn
+- KHÔNG đẩy file .env lên GitHub
+
+Mosquitto mặc định:
+mqtt://127.0.0.1:1883
+
+Xem README.md để biết payload MQTT và API.

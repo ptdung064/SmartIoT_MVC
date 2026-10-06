@@ -1,0 +1,23 @@
+{
+  "name": "smart-iot-mvc-backend",
+  "version": "1.0.0",
+  "description": "Smart IoT monitoring and control system - Node.js, Express, MongoDB, MQTT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node scripts/seed.js",
+    "migrate:legacy": "node scripts/migrateLegacyData.js"
+  },
+  "keywords": ["iot", "mqtt", "express", "mongodb", "mvc"],
+  "author": "Pham Tien Dung",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.0",
+    "mqtt": "^5.15.2",
+    "socket.io": "^4.8.3"
+  }
+}
