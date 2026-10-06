@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Smart IoT MVC — Hệ thống giám sát nhiệt độ, độ ẩm và ánh sáng
 
 Dự án này được hoàn thiện từ báo cáo/SRS và hai thư mục Frontend/Backend tham khảo.
@@ -317,3 +318,7 @@ Nếu cần nắm nhanh luồng chương trình:
 8. `frontend/js/core/api.js`
 
 Các file đều tách nhỏ để dễ sửa và giải thích.
+=======
+# SmartIoT_MVC
+Bài tập lớn môn IoT, đo dữ liệu cảm biến nhiệt độ, độ ẩm và ánh sáng.
+>>>>>>> 4eea66f5a010acf2598a83f9e1e1ea5abd7a219e
